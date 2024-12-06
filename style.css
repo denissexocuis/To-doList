@@ -1,0 +1,112 @@
+:root
+{
+    --color-primario: #A53860;
+    --color-secundario: #A53860;
+    --bg: #450920;
+    /* !aqui rem respeta el tamaño de la fuente */
+    --text-size: 1.5 rem;
+    --color-text: #F9DBBD;
+    --color-bg: #FFA5AB;
+}
+
+
+body
+{
+    font-family: "Parkinsans", sans-serif;
+    background-color: var(--bg);
+    height: 10vh; /* viewport height */
+    color:var(--color-text);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 10px; 
+    overflow-y: auto;/* *scroll en la cajita */
+}
+
+.header
+{
+    padding: 10px 0 5px 0;
+}
+
+.add{
+    background-color:var(--color-bg);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 40px;
+}
+
+.add input{
+    width: 100%;
+    height: 100%;
+    border:none;
+    border-radius: 8px;
+    background-color: var(--color-bg);
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: "Parkinsans", sans-serif;;
+    color: var(--color-text);
+}
+
+#input::placeholder{
+    color: gray;
+}
+
+.add i{
+    font-size: 45px;
+    color:var(--color-text)
+}
+
+.add i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tasks h2{
+    margin-bottom: 10px;
+}
+
+.tasks i:hover{
+    color: var(--primary-color);
+}
+
+#list{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.task-item {
+    background-color: var(--color-text);
+    border-radius: 10px;
+    padding: 8px;
+    color: var(--bg);
+    margin-bottom: 5px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.crossed_off{
+    text-decoration: line-through;
+    color: var(--primary-color);
+}
+
+.bi-record-circle{
+    color: var(--primary-color);
+}
+
+.bi-x{
+    font-size: 20px;
+}
